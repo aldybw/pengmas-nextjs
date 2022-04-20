@@ -1,0 +1,268 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+/*--------------------------------------------------------------
+   # Header
+   --------------------------------------------------------------*/
+.panduan {
+  color: #f3b1ce;
+  font-weight: bold;
+  text-shadow: 1px 3px rgb(41, 0, 33);
+}
+
+/*--------------------------------------------------------------
+# Icons Video
+--------------------------------------------------------------*/
+.featured-services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.featured-services .icon-box::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.featured-services .icon-box:hover::before {
+  top: 0;
+  border-radius: 0px;
+}
+
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+
+.featured-services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #f3b1ce;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured-services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.featured-services .title a {
+  color: #111;
+}
+
+.featured-services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.modal-content {
+  border-radius: 16px;
+}
+
+.modal-header {
+  background-color: #f3b1ce;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.modal-footer {
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+/* .featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+    color: #fff;
+  }
+  .featured-services .icon-box:hover .icon i {
+    color: #fff;
+  } */
+
+/*--------------------------------------------------------------
+   # Persiapan
+   --------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+  #hero {
+    height: auto;
+  }
+
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .sakubumil-logo-wrapper {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .instansi-logo-wrapper {
+    justify-content: center;
+  }
+
+  .video-section {
+    margin-top: 10px;
+  }
+}
+
+.btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #f3b1ce;
+  /* box-shadow: 0 8px 28px rgba(192, 2, 167, 0.45); */
+}
+
+.btn-get-started:hover {
+  /* background: #fff; */
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(192, 2, 167, 0.45);
+}
+
+@media all and (max-width: 992px) {
+  .btn-get-started {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.sakubumil-text {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.sakubumil-logo {
+  width: 60px;
+}
+
+.depok-logo {
+  height: 36px;
+}
+
+.dinkes-logo {
+  height: 30px;
+}
+
+.pnj-logo {
+  height: 36px;
+}
+
+.btn-get-go {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #f3b1ce;
+  box-shadow: 0 1px 8px rgba(192, 2, 167, 0.45);
+}
+
+.btn-get-go:hover {
+  background: #f3b1ce;
+  top: 0;
+  border-radius: 4px;
+}
+
+.btn-get-go:hover::before {
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(164, 164, 165, 0.45);
+}
+
+.btn-get-go:hover {
+  background: #ffffff;
+  top: 0;
+  border-radius: 4px;
+}
+
+.video-section {
+  margin-top: 30px;
+}
+
+.video-wrapper,
+.video-wrapper video,
+.details-parent {
+  border-radius: 8px;
+  box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
+}
+
+.details-parent {
+  padding: 20px;
+  border: 1px solid #f5f5f5;
+  margin-bottom: 40px;
+}
+
+.details-parent li {
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+  .video-wrapper {
+    margin-bottom: 40px;
+  }
+}
